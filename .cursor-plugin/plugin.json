@@ -1,0 +1,28 @@
+{
+  "name": "stork",
+  "displayName": "Stork",
+  "version": "1.0.0",
+  "description": "Make talking-photo videos, singing videos and voiceovers from the agent, and search a directory of AI tools and MCP servers.",
+  "author": {
+    "name": "Stork.AI",
+    "email": "support@stork.ai"
+  },
+  "homepage": "https://www.stork.ai/developers",
+  "repository": "https://github.com/jupiterspins/stork-cursor-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["stork", "talking-photo", "lip-sync", "text-to-speech", "ai-video", "mcp"],
+  "category": "integrations",
+  "tags": ["video", "voice", "creative", "mcp"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "STORK_API_KEY": {
+        "type": "string",
+        "title": "Stork API key",
+        "description": "Optional. Leave empty to use the directory tools. The video and voice tools need a key from https://www.stork.ai/dashboard/api (starts with sk_stork_)."
+      }
+    }
+  },
+  "mcpServers": "./mcp.json"
+}
